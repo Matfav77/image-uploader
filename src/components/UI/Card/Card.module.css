@@ -1,0 +1,16 @@
+.card {
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1.5rem;
+    text-align: center;
+    color: #4F4F4F;
+}
+
+h1 {
+    font-size: 1.2rem;
+}

@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+
+import Card from "./components/UI/Card/Card";
+import Footer from "./components/layout/Footer";
+import Button from "./components/UI/Button/Button";
+
+import styles from './App.module.css'
+import Droparea from './components/Droparea/Droparea';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const isUploading = useState(false);
+
+  return <>
+    <main>
+      <Card title='Upload your image' details='File should be Jpeg, Png, WebP...' styles={styles.mainCard}>
+        <Droparea />
+        <p>Or</p>
+        <Button txt='Choose a file' />
+      </Card>
+    </main>
+    <Footer />
+  </>
 }
 
 export default App;
