@@ -1,0 +1,19 @@
+.checkmark {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #219653;
+    border-radius: 50%;
+}
+
+.urlDisplay {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+}
+
+input {
+    border: none;
+}
