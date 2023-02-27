@@ -8,12 +8,12 @@ import styles from './App.module.css'
 import Droparea from './components/Droparea/Droparea';
 
 function App() {
-  const isUploading = useState(false);
+  const [isUploading, setIsUploading] = useState(false);
 
   return <>
     <main>
       <Card title='Upload your image' details='File should be Jpeg, Png, WebP...' styles={styles.mainCard}>
-        <Droparea />
+        <Droparea setIsUploading={setIsUploading} />
         <p>Or</p>
         <Button txt='Choose a file' />
       </Card>
