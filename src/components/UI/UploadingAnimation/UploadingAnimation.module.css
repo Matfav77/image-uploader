@@ -1,0 +1,28 @@
+.loadingBar {
+    width: 300px;
+    height: 10px;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.loadingBar::after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 10px;
+    border-radius: 8px;
+    background-color: #2F80ED;
+    animation: slide 2s ease-in-out infinite;
+}
+
+@keyframes slide {
+    from {
+        transform: translate3d(-200px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(200px, 0, 0);
+    }
+}
