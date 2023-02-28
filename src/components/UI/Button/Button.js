@@ -2,7 +2,7 @@ import styles from './Button.module.css'
 
 function Button(props) {
 
-    return <button onClick={props.Onclick}>{props.txt}</button>
+    return <button onClick={props.onClick}>{props.txt}</button>
 }
 
 export default Button;
